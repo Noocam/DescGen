@@ -1,0 +1,163 @@
+doctype html
+head
+  title CARTE GRAPHIQUE
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css')
+  link(rel='stylesheet', href='/stylesheets/cartegraphique.css')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+  h1 CARTE GRAPHIQUE
+body
+#contains
+  h1#maintitles TITRE DU PRODUIT
+  label.maintitle(for='maintitle') Titre produit
+  input#maintitle(type='text' name='maintitle')
+
+  h1#maintitles DESCRIPTION AVANT TABLEAU
+  label.firsttitle(for='firsttitle') Titre premiere image
+  input#firsttitle(type='text' name='firsttitle')
+
+  label.firstdesc(for='firstdesc') Description première image
+  textarea#firstdesc(type='text' rows='5')
+
+  label.secondtitle(for='secondtitle') Titre deuxieme image
+  input#secondtitle(type='text' name='secondtitle')
+
+  label.seconddesc(for='seconddesc') Description deuxieme image
+  textarea#seconddesc(type='text' rows='5')
+
+  label.thirdtitle(for='thirdtitle') Titre troisieme image
+  input#thirdtitle(type='text' name='thirdtitle')
+
+  label.thirddesc(for='thirddesc') Description troisieme image
+  textarea#thirddesc(type='text' rows='5')
+
+
+  h1#maintitles DESCRIPTION DETAILLÉE
+  h1#maintitles INFORMATIONS GENERALES
+  label.marque(for='marque') marque
+  input#marque(type='text' name='marque')
+
+  label.reffab(for='reffab') Référence fabricant (Sku)
+  input#reffab(type='text' name='reffab')
+
+  label.modele(for='modele') modele
+  input#modele(type='text' name='modele')
+
+  h1#maintitles CARACTERISTIQUES PRINCIPALES
+  label.chipsetgraph(for='chipsetgraph') Chipset graphique
+  input#chipsetgraph(type='text' name='chipsetgraph')
+
+  label.freq(for='freq') Fréquence
+  input#freq(type='text' name='freq')
+
+  label.freqoc(for='freqoc') Fréquence en mode OC
+  input#freqoc(type='text' name='freqoc')
+
+  label.oc(for='oc') OC
+  input#oc(type='text' name='oc')
+
+  label.bustype(for='bustype') Type de bus
+  input#bustype(type='text' name='bustype')
+
+  label.usevar(for='usevar') Utilisation type
+  input#usevar(type='text' name='usevar')
+
+  h1#maintitles MEMOIRE
+  label.memtype(for='memtype') Type de mémoire
+  input#memtype(type='text' name='memtype')
+
+  label.memcap(for='memcap') Capacité
+  input#memcap(type='text' name='memcap')
+
+  label.memfreq(for='memfreq') Fréquence
+  input#memfreq(type='text' name='memfreq')
+
+  h1#maintitles SPECIFICATION TECHNIQUES
+  label.multigpu(for='multigpu') Multi-GPU
+  input#multigpu(type='text' name='multigpu')
+
+  label.directx(for='directx') Support Direct X
+  input#directx(type='text' name='directx')
+
+  label.hdr(for='hdr') HD Ready
+  input#hdr(type='text' name='hdr')
+
+  label.vrr(for='vrr') VR Ready
+  input#vrr(type='text' name='vrr')
+
+  label.resmax(for='resmax') Résolution Max
+  input#resmax(type='text' name='resmax')
+
+  label.multidisplay(for='multidisplay') Affichage multiple
+  input#multidisplay(type='text' name='multidisplay')
+
+  h1#maintitles CONNECTIQUES
+  label.dpnbr(for='dpnbr') Nombre de ports DisplayPort
+  input#dpnbr(type='text' name='dpnbr')
+
+  label.dpnorm(for='dpnorm') Norme DP
+  input#dpnorm(type='text' name='dpnorm')
+
+  label.hdminbr(for='hdminbr') Nombre de ports HDMI
+  input#hdminbr(type='text' name='hdminbr')
+
+  label.hdmi(for='hdmi') Norme HDMI
+  input#hdmi(type='text' name='hdmi')
+
+  label.dvinbr(for='dvinbr') Nombre de ports DVI
+  input#dvinbr(type='text' name='dvinbr')
+
+  label.dvi(for='dvi') Norme DVI
+  input#dvi(type='text' name='dvi')
+
+  label.vganbr(for='vganbr') Nombre de ports VGA
+  input#vganbr(type='text' name='vganbr')
+
+  label.alimcon(for='alimcon') Connecteurs d'alimentation
+  input#alimcon(type='text' name='alimcon')
+
+
+  h1#maintitles ERGONOMIE
+  label.dimensions(for='dimensions') Dimensions (L x l x H) en cm
+  input#dimensions(type='text' name='dimensions')
+
+  label.poids(for='poids') Poids
+  input#poids(type='text' name='poids')
+
+  label.cooling(for='cooling') Refroidissement
+  input#cooling(type='text' name='cooling')
+
+  label.lprofile(for='lprofile') Low Profile
+  input#lprofile(type='text' name='lprofile')
+
+  label.alimr(for='alimr') Alimentation Recommandée
+  input#alimr(type='text' name='alimr')
+
+  label.nbrslot(for='nbrslot') Nombre de slots occupés
+  input#nbrslot(type='text' name='nbrslot')
+
+  label.RGB(for='RGB') RGB
+  input#RGB(type='text' name='RGB')
+
+
+
+  h1#maintitles GARANTIE
+  label.garantie(for='garantie') Garantie constructeur
+  input#garantie(type='text' name='garantie')
+
+  h1#maintitles INFORMATIONS ANNEXES
+  label.construct(for='construct') Site du constructeur
+  input#construct(type='url' name='construct')
+
+  label.cat(for='cat') Lien vers la catégorie du produit
+  input#cat(type='url' name='cat')
+
+
+  button#submit Generate
+.result
+  textarea.result_text(type='text' rows='5')
+  button.copy_btn
+    i.fas.fa-clipboard
+
+  script(src='/javascripts/carte_graphique.js')

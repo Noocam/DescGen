@@ -1,0 +1,128 @@
+doctype html
+head
+  title HEADSET
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css')
+  link(rel='stylesheet', href='/stylesheets/casque.css')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+  h1 HEADSET
+body
+#contains
+  h1#maintitles TITRE DU PRODUIT
+  label.maintitle(for='maintitle') Titre produit
+  input#maintitle(type='text' name='maintitle')
+
+  h1#maintitles DESCRIPTION AVANT TABLEAU
+  label.firsttitle(for='firsttitle') Titre premiere image
+  input#firsttitle(type='text' name='firsttitle')
+
+  label.firstdesc(for='firstdesc') Description première image
+  textarea#firstdesc(type='text' rows='5')
+
+  label.secondtitle(for='secondtitle') Titre deuxieme image
+  input#secondtitle(type='text' name='secondtitle')
+
+  label.seconddesc(for='seconddesc') Description deuxieme image
+  textarea#seconddesc(type='text' rows='5')
+
+  label.thirdtitle(for='thirdtitle') Titre troisieme image
+  input#thirdtitle(type='text' name='thirdtitle')
+
+  label.thirddesc(for='thirddesc') Description troisieme image
+  textarea#thirddesc(type='text' rows='5')
+
+
+  h1#maintitles DESCRIPTION DETAILLÉE
+  h1#maintitles INFORMATIONS GENERALES
+  label.marque(for='marque') marque
+  input#marque(type='text' name='marque')
+
+  label.reffab(for='reffab') Référence fabricant (Sku)
+  input#reffab(type='text' name='reffab')
+
+  label.modele(for='modele') modele
+  input#modele(type='text' name='modele')
+
+  h1#maintitles TECHNOLOGIE
+  label.typevar(for='typevar') Type
+  input#typevar(type='text' name='typevar')
+
+  label.cable(for='cable') Avec fil / Sans fil
+  input#cable(type='text' name='cable')
+
+  label.connect(for='connect') Connectivité
+  input#connect(type='text' name='connect')
+
+  label.oformat(for='oformat') Format des oreillettes
+  input#oformat(type='text' name='oformat')
+
+  label.surround(for='surround') Surround
+  input#surround(type='text' name='surround')
+
+  label.compat(for='compat') Compatibilité
+  input#compat(type='text' name='compat')
+
+  h1#maintitles AUDIO
+  label.diam(for='diam') Diamètre des hauts-parleurs
+  input#diam(type='text' name='diam')
+
+  label.bandemini1(for='bandemini1') Bande passante (mini)
+  input#bandemini1(type='text' name='bandemini1')
+
+  label.bandemaxi1(for='bandemaxi1') Bande passante (maxi)
+  input#bandemaxi1(type='text' name='bandemaxi1')
+
+  label.pedance(for='pedance') Impédance
+  input#pedance(type='text' name='pedance')
+
+  h1#maintitles MICRO
+  label.microtype(for='microtype') Type de micro
+  input#microtype(type='text' name='microtype')
+
+  label.detachable(for='detachable') Detachable
+  input#detachable(type='text' name='detachable')
+
+  label.bandemini2(for='bandemini2') Bande passante (mini)
+  input#bandemini2(type='text' name='bandemini2')
+
+  label.bandemaxi2(for='bandemaxi2') Bande passante (maxi)
+  input#bandemaxi2(type='text' name='bandemaxi2')
+
+  h1#maintitles ERGONOMIE
+  label.usevar(for='usevar') Utilisation
+  input#usevar(type='text' name='usevar')
+
+  label.vcontrol(for='vcontrol') Contrôle du volume
+  input#vcontrol(type='text' name='vcontrol')
+
+  label.RGB(for='RGB') RGB
+  input#RGB(type='text' name='RGB')
+
+  h1#maintitles CARACTERISTIQUES PHYSIQUES
+  label.poids(for='poids') Poids
+  input#poids(type='text' name='poids')
+
+  label.couleur(for='couleur') Couleur
+  input#couleur(type='text' name='couleur')
+
+
+  h1#maintitles GARANTIE
+  label.garantie(for='garantie') Garantie constructeur
+  input#garantie(type='text' name='garantie')
+
+  h1#maintitles INFORMATIONS ANNEXES
+  label.construct(for='construct') Site du constructeur
+  input#construct(type='url' name='construct')
+
+  label.cat(for='cat') Lien vers la catégorie du produit
+  input#cat(type='url' name='cat')
+
+
+  button#submit Generate
+.result
+  textarea.result_text(type='text' rows='5')
+  button.copy_btn
+    i.fas.fa-clipboard
+
+  script(src='/javascripts/casque.js')

@@ -1,0 +1,114 @@
+doctype html
+head
+  title RAM
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css')
+  link(rel='stylesheet', href='/stylesheets/ram.css')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+  h1 RAM
+body
+#contains
+  h1#maintitles TITRE DU PRODUIT
+  label.maintitle(for='maintitle') Titre produit
+  input#maintitle(type='text' name='maintitle')
+
+  h1#maintitles DESCRIPTION AVANT TABLEAU
+  label.firsttitle(for='firsttitle') Titre premiere image
+  input#firsttitle(type='text' name='firsttitle')
+
+  label.firstdesc(for='firstdesc') Description première image
+  textarea#firstdesc(type='text' rows='5')
+
+  label.secondtitle(for='secondtitle') Titre deuxieme image
+  input#secondtitle(type='text' name='secondtitle')
+
+  label.seconddesc(for='seconddesc') Description deuxieme image
+  textarea#seconddesc(type='text' rows='5')
+
+  label.thirdtitle(for='thirdtitle') Titre troisieme image
+  input#thirdtitle(type='text' name='thirdtitle')
+
+  label.thirddesc(for='thirddesc') Description troisieme image
+  textarea#thirddesc(type='text' rows='5')
+
+
+  h1#maintitles DESCRIPTION DETAILLÉE
+  h1#maintitles INFORMATIONS GENERALES
+  label.marque(for='marque') marque
+  input#marque(type='text' name='marque')
+
+  label.reffab(for='reffab') Référence fabricant (Sku)
+  input#reffab(type='text' name='reffab')
+
+  label.modele(for='modele') modele
+  input#modele(type='text' name='modele')
+
+  h1#maintitles CARACTERISTIQUES PRINCIPALES
+  label.ramtype(for='ramtype') Type de RAM
+  input#ramtype(type='text' name='ramtype')
+
+  label.barnbr(for='barnbr') Nombre de barettes
+  input#barnbr(type='text' name='barnbr')
+
+  label.usevar(for='usevar') Utilisation type
+  input#usevar(type='text' name='usevar')
+
+  label.ramform(for='ramform') Format de RAM
+  input#ramform(type='text' name='ramform')
+
+  label.cooling(for='cooling') Refroidissement
+  input#cooling(type='text' name='cooling')
+
+
+  h1#maintitles MEMOIRES
+  label.capatotal(for='capatotal') Capacité totale
+  input#capatotal(type='text' name='capatotal')
+
+  label.capabar(for='capabar') Capacité par barette
+  input#capabar(type='text' name='capabar')
+
+  label.frequence(for='frequence') Fréquence
+  input#frequence(type='text' name='frequence')
+
+  label.norm(for='norm') Norme
+  input#norm(type='text' name='norm')
+
+  label.spec(for='spec') Spécificité
+  input#spec(type='text' name='spec')
+
+  label.caslat(for='caslat') CAS Latency
+  input#caslat(type='text' name='caslat')
+
+  label.rascas(for='rascas') RAS to CAS delay
+  input#rascas(type='text' name='rascas')
+
+  label.raspre(for='raspre') RAS precharge time
+  input#raspre(type='text' name='raspre')
+
+  label.rasactive(for='rasactive') RAS Active time
+  input#rasactive(type='text' name='rasactive')
+
+  label.tens(for='tens') Tension
+  input#tens(type='text' name='tens')
+
+
+  h1#maintitles GARANTIE
+  label.garantie(for='garantie') Garantie constructeur
+  input#garantie(type='text' name='garantie')
+
+  h1#maintitles INFORMATIONS ANNEXES
+  label.construct(for='construct') Site du constructeur
+  input#construct(type='url' name='construct')
+
+  label.cat(for='cat') Lien vers la catégorie du produit
+  input#cat(type='url' name='cat')
+
+
+  button#submit Generate
+.result
+  textarea.result_text(type='text' rows='5')
+  button.copy_btn
+    i.fas.fa-clipboard
+
+  script(src='/javascripts/ram.js')

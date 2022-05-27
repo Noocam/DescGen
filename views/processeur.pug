@@ -1,0 +1,124 @@
+doctype html
+head
+  title PROCESSEUR
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css')
+  link(rel='stylesheet', href='/stylesheets/processeur.css')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+  h1 PROCESSEUR
+body
+#contains
+  h1#maintitles TITRE DU PRODUIT
+  label.maintitle(for='maintitle') Titre produit
+  input#maintitle(type='text' name='maintitle')
+
+  h1#maintitles DESCRIPTION AVANT TABLEAU
+  label.firsttitle(for='firsttitle') Titre premiere image
+  input#firsttitle(type='text' name='firsttitle')
+
+  label.firstdesc(for='firstdesc') Description première image
+  textarea#firstdesc(type='text' rows='5')
+
+  label.secondtitle(for='secondtitle') Titre deuxieme image
+  input#secondtitle(type='text' name='secondtitle')
+
+  label.seconddesc(for='seconddesc') Description deuxieme image
+  textarea#seconddesc(type='text' rows='5')
+
+  label.thirdtitle(for='thirdtitle') Titre troisieme image
+  input#thirdtitle(type='text' name='thirdtitle')
+
+  label.thirddesc(for='thirddesc') Description troisieme image
+  textarea#thirddesc(type='text' rows='5')
+
+
+  h1#maintitles DESCRIPTION DETAILLÉE
+  h1#maintitles INFORMATIONS GENERALES
+  label.marque(for='marque') marque
+  input#marque(type='text' name='marque')
+
+  label.reffab(for='reffab') Référence fabricant (Sku)
+  input#reffab(type='text' name='reffab')
+
+  label.modele(for='modele') modele
+  input#modele(type='text' name='modele')
+
+  h1#maintitles CARACTERISTIQUES PRINCIPALES
+  label.serie(for='serie') Série
+  input#serie(type='text' name='serie')
+
+  label.socket(for='socket') Socket
+  input#socket(type='text' name='socket')
+
+  label.freq(for='freq') Fréquence
+  input#freq(type='text' name='freq')
+
+  label.turbofreq(for='turbofreq') Fréquence en mode turbo
+  input#turbofreq(type='text' name='turbofreq')
+
+  label.nbrcore(for='nbrcore') Nombre de coeurs
+  input#nbrcore(type='text' name='nbrcore')
+
+  label.nbrthread(for='nbrthread') Nombre de Threads
+  input#nbrthread(type='text' name='nbrthread')
+
+  label.packaging(for='packaging') Packaging
+  input#packaging(type='text' name='packaging')
+
+  label.cooling(for='cooling') Refroidissement
+  input#cooling(type='text' name='cooling')
+
+  h1#maintitles CHIPSET GRAPHIQUE
+  label.chipset(for='chipset') Chipset
+  input#chipset(type='text' name='chipset')
+
+  label.chipfreq(for='chipfreq') Fréquence du chipset
+  input#chipfreq(type='text' name='chipfreq')
+
+  h1#maintitles ARCHITECHTURE
+  label.plateform(for='plateform') Plateforme
+  input#plateform(type='text' name='plateform')
+
+  label.tdp(for='tdp') TDP
+  input#tdp(type='text' name='tdp')
+
+  label.cache(for='cache') Cache L3
+  input#cache(type='text' name='cache')
+
+  label.chipcomp(for='chipcomp') Compatibilité de carte mere (chipset)
+  input#chipcomp(type='text' name='chipcomp')
+
+  h1#maintitles MEMOIRE
+  label.memtype(for='memtype') Type de memoire
+  input#memtype(type='text' name='memtype')
+
+  label.duachan(for='duachan') Compatibilité Dual Channel
+  input#duachan(type='text' name='duachan')
+
+  label.memfreq(for='memfreq') Fréquence(s) mémoire
+  input#memfreq(type='text' name='memfreq')
+
+  h1#maintitles TECHNOLOGIES SPECIFIQUES
+  label.virt(for='virt') Virtualisation
+  input#virt(type='text' name='virt')
+
+  h1#maintitles GARANTIE
+  label.garantie(for='garantie') Garantie constructeur
+  input#garantie(type='text' name='garantie')
+
+  h1#maintitles INFORMATIONS ANNEXES
+  label.construct(for='construct') Site du constructeur
+  input#construct(type='url' name='construct')
+
+  label.cat(for='cat') Lien vers la catégorie du produit
+  input#cat(type='url' name='cat')
+
+
+  button#submit Generate
+.result
+  textarea.result_text(type='text' rows='5')
+  button.copy_btn
+    i.fas.fa-clipboard
+
+  script(src='/javascripts/processeur.js')

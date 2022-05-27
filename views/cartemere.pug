@@ -1,0 +1,166 @@
+doctype html
+head
+  title CARTE MERE
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css')
+  link(rel='stylesheet', href='/stylesheets/cartemere.css')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+  h1 CARTE MERE
+body
+#contains
+  h1#maintitles TITRE DU PRODUIT
+  label.maintitle(for='maintitle') Titre produit
+  input#maintitle(type='text' name='maintitle')
+
+  h1#maintitles DESCRIPTION AVANT TABLEAU
+  label.firsttitle(for='firsttitle') Titre premiere image
+  input#firsttitle(type='text' name='firsttitle')
+
+  label.firstdesc(for='firstdesc') Description première image
+  textarea#firstdesc(type='text' rows='5')
+
+  label.secondtitle(for='secondtitle') Titre deuxieme image
+  input#secondtitle(type='text' name='secondtitle')
+
+  label.seconddesc(for='seconddesc') Description deuxieme image
+  textarea#seconddesc(type='text' rows='5')
+
+  label.thirdtitle(for='thirdtitle') Titre troisieme image
+  input#thirdtitle(type='text' name='thirdtitle')
+
+  label.thirddesc(for='thirddesc') Description troisieme image
+  textarea#thirddesc(type='text' rows='5')
+
+
+  h1#maintitles DESCRIPTION DETAILLÉE
+  h1#maintitles INFORMATIONS GENERALES
+  label.marque(for='marque') marque
+  input#marque(type='text' name='marque')
+
+  label.reffab(for='reffab') Référence fabricant (Sku)
+  input#reffab(type='text' name='reffab')
+
+  label.modele(for='modele') modele
+  input#modele(type='text' name='modele')
+
+  h1#maintitles PROCESSEUR
+  label.compatcpu(for='compatcpu') Compatibilité CPU
+  input#compatcpu(type='text' name='compatcpu')
+
+  label.socket(for='socket') Socket
+  input#socket(type='text' name='socket')
+
+  h1#maintitles CHIPSET
+  label.chipset(for='chipset') Chipset
+  input#chipset(type='text' name='chipset')
+
+  h1#maintitles MEMOIRE
+  label.memtype(for='memtype') Type de memoire
+  input#memtype(type='text' name='memtype')
+
+  label.memfreq(for='memfreq') Fréquence(s) mémoire
+  input#memfreq(type='text' name='memfreq')
+
+  label.duachan(for='duachan') Compatibilité Dual Channel
+  input#duachan(type='text' name='duachan')
+
+  label.slotcapac(for='slotcapac') Capacité maximale par slot
+  input#slotcapac(type='text' name='slotcapac')
+
+  label.maxcap(for='maxcap') Capacité maximale
+  input#maxcap(type='text' name='maxcap')
+
+  label.ecc(for='ecc') RAM ECC prise en charge
+  input#ecc(type='text' name='ecc')
+
+  h1#maintitles CHIPSET GRAPHIQUE EMBARQUE
+  label.chipsetgint(for='chipsetgint') Chipset graphique intégré
+  input#chipsetgint(type='text' name='chipsetgint')
+
+  label.memshare(for='memshare') Mémoire partagée
+  input#memshare(type='text' name='memshare')
+
+  h1#maintitles AUDIO
+  label.audiochip(for='audiochip') Chipset audio
+  input#audiochip(type='text' name='audiochip')
+
+  label.chan(for='chan') Canaux
+  input#chan(type='text' name='chan')
+
+  h1#maintitles RESEAU
+  label.ether(for='ether') Ethernet Rj45
+  input#ether(type='text' name='ether')
+
+  label.wifi(for='wifi') Wifi
+  input#wifi(type='text' name='wifi')
+
+  label.blue(for='blue') Bluetooth
+  input#blue(type='text' name='blue')
+
+  h1#maintitles STOCKAGE
+  label.sata(for='sata') Ports SATA
+  input#sata(type='text' name='sata')
+
+  label.m2(for='m2') Ports M.2
+  input#m2(type='text' name='m2')
+
+  label.raid(for='raid') Compatibilité RAID
+  input#raid(type='text' name='raid')
+
+  h1#maintitles SLOT D'EXTENSION
+  label.pci1(for='pci1') PCI-Ex 16x
+  input#pci1(type='text' name='pci1')
+
+  label.pci2(for='pci2') PCI-Ex 8x
+  input#pci2(type='text' name='pci2')
+
+  label.pci3(for='pci3') PCI-Ex 4x
+  input#pci3(type='text' name='pci3')
+
+  label.pci4(for='pci4') PCI-Ex 1x
+  input#pci4(type='text' name='pci4')
+
+  h1#maintitles CONNECTIQUES
+  label.backpanel(for='backpanel') Panneau arrière
+  input#backpanel(type='text' name='backpanel')
+
+  label.usb(for='usb') Ports USB
+  input#usb(type='text' name='usb')
+
+  label.consup(for='consup') Connecteurs supplémentaires
+  input#consup(type='text' name='consup')
+
+  h1#maintitles CARACTERISTIQUES PHYSIQUES
+  label.dimensions(for='dimensions') Dimensions (L x l x H) en cm
+  input#dimensions(type='text' name='dimensions')
+
+  label.format(for='format') Format
+  input#format(type='text' name='format')
+
+  label.led(for='led') LED
+  input#led(type='text' name='led')
+
+  label.couleur(for='couleur') Couleur
+  input#couleur(type='text' name='couleur')
+
+
+  h1#maintitles GARANTIE
+  label.garantie(for='garantie') Garantie constructeur
+  input#garantie(type='text' name='garantie')
+
+  h1#maintitles INFORMATIONS ANNEXES
+  label.construct(for='construct') Site du constructeur
+  input#construct(type='url' name='construct')
+
+  label.cat(for='cat') Lien vers la catégorie du produit
+  input#cat(type='url' name='cat')
+
+
+  button#submit Generate
+.result
+  textarea.result_text(type='text' rows='5')
+  button.copy_btn
+    i.fas.fa-clipboard
+
+  script(src='/javascripts/cartemere.js')

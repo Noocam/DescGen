@@ -1,0 +1,141 @@
+doctype html
+head
+  title BOITIER
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css')
+  link(rel='stylesheet', href='/stylesheets/boitier.css')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+  h1 BOITIER
+body
+#contains
+  h1#maintitles TITRE DU PRODUIT
+  label.maintitle(for='maintitle') Titre produit
+  input#maintitle(type='text' name='maintitle')
+
+  h1#maintitles DESCRIPTION AVANT TABLEAU
+  label.firsttitle(for='firsttitle') Titre premiere image
+  input#firsttitle(type='text' name='firsttitle')
+
+  label.firstdesc(for='firstdesc') Description première image
+  textarea#firstdesc(type='text' rows='5')
+
+  label.secondtitle(for='secondtitle') Titre deuxieme image
+  input#secondtitle(type='text' name='secondtitle')
+
+  label.seconddesc(for='seconddesc') Description deuxieme image
+  textarea#seconddesc(type='text' rows='5')
+
+  label.thirdtitle(for='thirdtitle') Titre troisieme image
+  input#thirdtitle(type='text' name='thirdtitle')
+
+  label.thirddesc(for='thirddesc') Description troisieme image
+  textarea#thirddesc(type='text' rows='5')
+
+
+  h1#maintitles DESCRIPTION DETAILLÉE
+  h1#maintitles INFORMATIONS GENERALES
+  label.marque(for='marque') marque
+  input#marque(type='text' name='marque')
+
+  label.reffab(for='reffab') Référence fabricant (Sku)
+  input#reffab(type='text' name='reffab')
+
+  label.modele(for='modele') modele
+  input#modele(type='text' name='modele')
+
+  h1#maintitles CARACTERISTIQUES PRINCIPALES
+  label.cmformat(for='cmformat') Format de la carte mere
+  input#cmformat(type='text' name='cmformat')
+
+  label.btype(for='btype') Type de boitier
+  input#btype(type='text' name='btype')
+
+  label.alimformat(for='alimformat') Format d'alimentation
+  input#alimformat(type='text' name='alimformat')
+
+  label.alimfourni(for='alimfourni') Alimentation fournie
+  input#alimfourni(type='text' name='alimfourni')
+
+  label.usetype(for='usetype') Utilisation type
+  input#usetype(type='text' name='usetype')
+
+  h1#maintitles CARACTERISTIQUES PHYSIQUES
+  label.dimensions(for='dimensions') Dimensions (L x l x H) en cm
+  input#dimensions(type='text' name='dimensions')
+
+  label.poids(for='poids') Poids
+  input#poids(type='text' name='poids')
+
+  label.mats(for='mats') Matériaux
+  input#mats(type='text' name='mats')
+
+  label.couleur(for='couleur') Couleur
+  input#couleur(type='text' name='couleur')
+
+  label.latpan(for='latpan') Panneau latéral fenêtré
+  input#latpan(type='text' name='latpan')
+
+  label.gclenght(for='gclenght') Longueur max de la carte graphique
+  input#gclenght(type='text' name='gclenght')
+
+  h1#maintitles REFROIDISSEMENT
+  label.hmaxvent(for='hmaxvent') Hauteur max du ventirad
+  input#hmaxvent(type='text' name='hmaxvent')
+
+  label.vavant(for='vavant') Ventilateurs fournis Avant
+  input#vavant(type='text' name='vavant')
+
+  label.varriere(for='varriere') Ventilateurs fournis Arrière
+  input#varriere(type='text' name='varriere')
+
+  label.vhaut(for='vhaut') Ventilateurs fournis Haut
+  input#vhaut(type='text' name='vhaut')
+
+  label.vbas(for='vbas') Ventilateurs fournis Bas
+  input#vbas(type='text' name='vbas')
+
+  label.compavant(for='compavant') Compatibilité AIO avant
+  input#compavant(type='text' name='compavant')
+
+  label.comparriere(for='comparriere') Compatibilité AIO arrière
+  input#comparriere(type='text' name='comparriere')
+
+  label.comphaut(for='comphaut') Compatibilité AIO haut
+  input#comphaut(type='text' name='comphaut')
+
+  label.compbas(for='compbas') Compatibilité AIO bas
+  input#compbas(type='text' name='compbas')
+
+  h1#maintitles ERGONOMIE
+  label.connectfa(for='connectfa') Connectique en façade
+  input#connectfa(type='text' name='connectfa')
+
+  label.nbremp1(for='nbremp1') Nombre d'emplacements 2,5''
+  input#nbremp1(type='text' name='nbremp1')
+
+  label.nbremp2(for='nbremp2') Nombre d'emplacements 3,5''
+  input#nbremp2(type='text' name='nbremp2')
+
+  label.nbremp3(for='nbremp3') Nombre d'emplacements 5,25"
+  input#nbremp3(type='text' name='nbremp3')
+
+  h1#maintitles GARANTIE
+  label.garantie(for='garantie') Garantie constructeur
+  input#garantie(type='text' name='garantie')
+
+  h1#maintitles INFORMATIONS ANNEXES
+  label.construct(for='construct') Site du constructeur
+  input#construct(type='url' name='construct')
+
+  label.cat(for='cat') Lien vers la catégorie du produit
+  input#cat(type='url' name='cat')
+
+
+  button#submit Generate
+.result
+  textarea.result_text(type='text' rows='5')
+  button.copy_btn
+    i.fas.fa-clipboard
+
+  script(src='/javascripts/boitier.js')

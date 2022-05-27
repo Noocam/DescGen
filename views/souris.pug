@@ -1,0 +1,110 @@
+doctype html
+head
+  title SOURIS
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css')
+  link(rel='stylesheet', href='/stylesheets/souris.css')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+  h1 SOURIS
+body
+#contains
+  h1#maintitles TITRE DU PRODUIT
+  label.maintitle(for='maintitle') Titre produit
+  input#maintitle(type='text' name='maintitle')
+
+  h1#maintitles DESCRIPTION AVANT TABLEAU
+  label.firsttitle(for='firsttitle') Titre premiere image
+  input#firsttitle(type='text' name='firsttitle')
+
+  label.firstdesc(for='firstdesc') Description première image
+  textarea#firstdesc(type='text' rows='5')
+
+  label.secondtitle(for='secondtitle') Titre deuxieme image
+  input#secondtitle(type='text' name='secondtitle')
+
+  label.seconddesc(for='seconddesc') Description deuxieme image
+  textarea#seconddesc(type='text' rows='5')
+
+  label.thirdtitle(for='thirdtitle') Titre troisieme image
+  input#thirdtitle(type='text' name='thirdtitle')
+
+  label.thirddesc(for='thirddesc') Description troisieme image
+  textarea#thirddesc(type='text' rows='5')
+
+
+  h1#maintitles DESCRIPTION DETAILLÉE
+  h1#maintitles INFORMATIONS GENERALES
+  label.marque(for='marque') marque
+  input#marque(type='text' name='marque')
+
+  label.reffab(for='reffab') Référence fabricant (Sku)
+  input#reffab(type='text' name='reffab')
+
+  label.modele(for='modele') modele
+  input#modele(type='text' name='modele')
+
+  h1#maintitles TECHNOLOGIE
+  label.filvar(for='filvar') Avec fil / Sans fil
+  input#filvar(type='text' name='usevar')
+
+  label.connect(for='connect') Connectivité
+  input#connect(type='text' name='connect')
+
+
+  h1#maintitles ERGONOMIE
+  label.nbrbut(for='nbrbut') Nombre de boutons
+  input#nbrbut(type='text' name='nbrbut')
+
+  label.typevar(for='typevar') Type
+  input#typevar(type='text' name='typevar')
+  
+  label.usevar(for='usevar') Utilisation
+  input#usevar(type='text' name='usevar')
+
+  label.ambi(for='ambi') Ambidextre
+  input#ambi(type='text' name='ambi')
+  
+  label.RGB(for='RGB') RGB / LED
+  input#RGB(type='text' name='RGB')
+
+  h1#maintitles CAPTEUR
+  label.captype(for='captype') Type de capteur
+  input#captype(type='text' name='captype')
+
+  label.reso(for='reso') Resolution
+  input#reso(type='text' name='reso')
+
+  h1#maintitles CARACTERISTIQUES PHYSIQUES
+  label.dimensions(for='dimensions') Dimensions (L x l x H) en cm
+  input#dimensions(type='text' name='dimensions')
+
+  label.poids(for='poids') Poids
+  input#poids(type='text' name='poids')
+
+  label.cablelenght(for='cablelenght') Longueur du cable
+  input#cablelenght(type='text' name='cablelenght')
+
+  label.couleur(for='couleur') Couleur
+  input#couleur(type='text' name='couleur')
+
+
+  h1#maintitles GARANTIE
+  label.garantie(for='garantie') Garantie constructeur
+  input#garantie(type='text' name='garantie')
+
+  h1#maintitles INFORMATIONS ANNEXES
+  label.construct(for='construct') Site du constructeur
+  input#construct(type='url' name='construct')
+
+  label.cat(for='cat') Lien vers la catégorie du produit
+  input#cat(type='url' name='cat')
+
+
+  button#submit Generate
+.result
+  textarea.result_text(type='text' rows='5')
+  button.copy_btn
+    i.fas.fa-clipboard
+
+  script(src='/javascripts/souris.js')

@@ -1,0 +1,180 @@
+doctype html
+head
+  title ECRAN
+  script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css')
+  link(rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css')
+  link(rel='stylesheet', href='/stylesheets/ecran.css')
+  script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js')
+  h1 ECRAN
+body
+#contains
+  h1#maintitles TITRE DU PRODUIT
+  label.maintitle(for='maintitle') Titre produit
+  input#maintitle(type='text' name='maintitle')
+
+  h1#maintitles DESCRIPTION AVANT TABLEAU
+  label.firsttitle(for='firsttitle') Titre premiere image
+  input#firsttitle(type='text' name='firsttitle')
+
+  label.firstdesc(for='firstdesc') Description première image
+  textarea#firstdesc(type='text' rows='5')
+
+  label.secondtitle(for='secondtitle') Titre deuxieme image
+  input#secondtitle(type='text' name='secondtitle')
+
+  label.seconddesc(for='seconddesc') Description deuxieme image
+  textarea#seconddesc(type='text' rows='5')
+
+  label.thirdtitle(for='thirdtitle') Titre troisieme image
+  input#thirdtitle(type='text' name='thirdtitle')
+
+  label.thirddesc(for='thirddesc') Description troisieme image
+  textarea#thirddesc(type='text' rows='5')
+
+
+  h1#maintitles DESCRIPTION DETAILLÉE
+  h1#maintitles INFORMATIONS GENERALES
+  label.marque(for='marque') marque
+  input#marque(type='text' name='marque')
+
+  label.reffab(for='reffab') Référence fabricant (Sku)
+  input#reffab(type='text' name='reffab')
+
+  label.modele(for='modele') modele
+  input#modele(type='text' name='modele')
+
+  h1#maintitles PANNEAU D'AFFICHAGE
+  label.taille(for='taille') Taille de l'écran
+  input#taille(type='text' name='taille')
+
+  label.dalletype(for='dalletype') Type de dalle
+  input#dalletype(type='text' name='dalletype')
+
+  label.dalleformat(for='dalleformat') Format de la dalle
+  input#dalleformat(type='text' name='dalleformat')
+
+  label.techno(for='techno') Technologie
+  input#techno(type='text' name='techno')
+
+  label.reptime(for='reptime') Temps de réponse
+  input#reptime(type='text' name='reptime')
+
+  label.freqrefresh(for='freqrefresh') Fréquence de rafraichissement
+  input#freqrefresh(type='text' name='freqrefresh')
+
+  label.maxres(for='maxres') Résolution prise en charge (max)
+  input#maxres(type='text' name='maxres')
+
+  label.pixelpitch(for='pixelpitch') Pitch de pixels
+  input#pixelpitch(type='text' name='pixelpitch')
+
+  label.lum(for='lum') Luminosité
+  input#lum(type='text' name='lum')
+
+  label.contr(for='contr') Contraste
+  input#contr(type='text' name='contr')
+
+  label.flick(for='flick') Flicker-free
+  input#flick(type='text' name='flick')
+
+  label.vangle(for='vangle') Angles de visions
+  input#vangle(type='text' name='vangle')
+
+  label.refle(for='refle') Anti-reflets
+  input#refle(type='text' name='refle')
+
+  label.HDR(for='HDR') Norme HDR
+  input#HDR(type='text' name='HDR')
+
+  label.gsync(for='gsync') NVIDIA G-SYNC
+  input#gsync(type='text' name='gsync')
+
+  label.fsync(for='fsync') AMD FreeSync
+  input#fsync(type='text' name='fsync')
+
+  h1#maintitles CARACTERISTIQUES SUPPLEMENTAIRES
+  label.troisD(for='troisD') Compatibilité 3d
+  input#troisD(type='text' name='troisD')
+
+  label.curve(for='curve') Ecran incurvé
+  input#curve(type='text' name='curve')
+
+  label.courb(for='courb') Courbure
+  input#courb(type='text' name='courb')
+
+  label.tact(for='tact') Ecran Tactile
+  input#tact(type='text' name='tact')
+
+  h1#maintitles ERGONOMIE
+  label.hgh(for='hgh') Réglage de la hauteur
+  input#hgh(type='text' name='hgh')
+
+  label.piv(for='piv') Pivot
+  input#piv(type='text' name='piv')
+
+  label.pieda(for='pieda') Pied amovible
+  input#pieda(type='text' name='pieda')
+
+  label.vesa(for='vesa') Norme VESA
+  input#vesa(type='text' name='vesa')
+
+  label.incl(for='incl') Inclinaison
+  input#incl(type='text' name='incl')
+
+  h1#maintitles CONNECTIVITE
+  label.videntry(for='videntry') Entrée vidéos
+  input#videntry(type='text' name='videntry')
+
+  label.vidout(for='vidout') Sorties vidéos
+  input#vidout(type='text' name='vidout')
+
+  label.audout(for='audout') Sorties audio
+  input#audout(type='text' name='audout')
+
+  h1#maintitles FONCTION SUPPLEMENTAIRES
+  label.speaker(for='speaker') Hauts parleurs intégrés
+  input#speaker(type='text' name='speaker')
+
+  label.usb(for='usb') Ports USB
+  input#usb(type='text' name='usb')
+
+  label.headset(for='headset') Support de casque
+  input#headset(type='text' name='headset')
+
+  label.cam(for='cam') Webcam
+  input#cam(type='text' name='cam')
+
+  h1#maintitles CARACTERISTIQUES PHYSIQUES
+  label.dimensions(for='dimensions') Dimensions (L x l x H) en cm
+  input#dimensions(type='text' name='dimensions')
+
+  label.poids(for='poids') Poids
+  input#poids(type='text' name='poids')
+
+  label.piedim(for='piedim') Dimensions sans le pied (L x l x H) en cm
+  input#piedim(type='text' name='piedim')
+
+  label.poidim(for='poidim') Poids sans le pied
+  input#poidim(type='text' name='poidim')
+
+
+  h1#maintitles GARANTIE
+  label.garantie(for='garantie') Garantie constructeur
+  input#garantie(type='text' name='garantie')
+
+  h1#maintitles INFORMATIONS ANNEXES
+  label.construct(for='construct') Site du constructeur
+  input#construct(type='url' name='construct')
+
+  label.cat(for='cat') Lien vers la catégorie du produit
+  input#cat(type='url' name='cat')
+
+
+  button#submit Generate
+.result
+  textarea.result_text(type='text' rows='5')
+  button.copy_btn
+    i.fas.fa-clipboard
+
+  script(src='/javascripts/ecran.js')
