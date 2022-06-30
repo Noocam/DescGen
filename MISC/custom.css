@@ -1,0 +1,52 @@
+/*
+ * Custom style goes here.
+ * A template should always ship with an empty custom.css
+ */
+
+.main-product-details h1.page-heading {
+margin: 0 15px;
+width: 100%;
+}
+
+#colissimo-widget-container {
+    height: auto !important;
+    width: auto !important;
+    padding: 0 !important;
+}
+
+
+    .dropdown:hover .dropdown-menu {
+        position: absolute !important;
+        display: block;
+        margin-top: 0;
+     }
+
+
+
+/* .dropspan {
+    border: none;
+  } 
+
+ .dropdown {
+    position: relative;
+    display: inline-block;
+  } 
+  
+   .dropdown-content {
+    display: none ;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 9;
+  } 
+  
+   .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block ;
+  } 
+
+  .dropdown:hover .dropdown-content  {display: block;}
+
+  .dropdown:hover .dropspan {background-color: #3e8e41;}   */
